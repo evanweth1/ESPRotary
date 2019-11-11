@@ -48,11 +48,11 @@ void showDirection(ESPRotary& r) {
 }
 
 
-void showPosition(Button2& btn) {
+void showPosition(Button2& b) {
   Serial.println(r.getPosition());
 }
 
-void resetPosition(Button2& btn) {
+void resetPosition(Button2& b) {
   r.resetPosition();
   Serial.println("Reset!");
   Serial.println(r.getPosition());  
